@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+*{
+    background-color: #FEC7D7;
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Pagina 1 y Pagina 2*/
+.imagenPag1{
+    width: 30px;
+    margin-top: 300px;
+    cursor: pointer;
+}
+.imagenPag2{
+    width: 130px;
+    margin-top: 250px;
+    cursor: pointer;
+}
+/*Pagina 3 y Pagina 4*/
+
+.ImagenPerroAcostado, .ImagenMuchacha{
+    width: 327px;
+    height: 327px;
+    margin-top: 10px;
+}
+.titulopagina3, .titulopagina4{
+    text-align: center;
+    margin-top: 30px;
+    font-family: nunito;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+.parrafopagina3, .parrafopagina4{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    font-family: 'Nunito', sans-serif;
+    color: #535353;
+    font-weight: 550;
+}
+
+.botonpagina3, .botonpagina4{
+    margin-top: 20px;
+    background-color: #0E172C;
+    color: white;
+    padding: 8px 100px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    text-align: center;
+}
+.botonpagina4{
+    margin-top: 5px;
+}
+
+/*Pagina 5*/
+.titulos h1{
+    margin-top: 50px;
+    margin-left: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+}
+.titulos h2{
+    margin-top: 80px;
+    margin-left: 60px;
+    font-weight: 560;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+}
+
+/*Media Queries*/
+    @media only screen and (min-width:400px) and (max-width:800px) {
+        .contenedor{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    
+}

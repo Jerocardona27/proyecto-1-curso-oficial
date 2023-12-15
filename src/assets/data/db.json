@@ -1,0 +1,26 @@
+{
+    "img": [
+        {
+            "id": 1,
+            "src": "https://res.cloudinary.com/dfl99nrne/image/upload/v1702649862/Adopci%C3%B3n/leonidasesteban.com_skv5xp.jpg"
+        },
+        {
+            "id": 2,
+            "username": "jero",
+            "password": "12345",
+            "piedra": ""
+        },
+        {
+            "id": 3,
+            "username": "Lu",
+            "password": "123456",
+            "piedra": ""
+        },
+        {
+            "id": 4,
+            "username": "Manuel",
+            "password": "1234567",
+            "piedra": ""
+        }
+    ]
+}
