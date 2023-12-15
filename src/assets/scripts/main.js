@@ -1,3 +1,6 @@
+console.log('hola')
+
+
 /*import { url } from "../helpers/contains.js";
 import { GetData } from "../helpers/peticiones.js";
 
@@ -44,4 +47,3 @@ document.addEventListener("DOMContentLoaded",
 
 */
 
-console.log('hola')
