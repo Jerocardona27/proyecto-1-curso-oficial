@@ -1,7 +1,7 @@
 console.log('hola')
 
 
-/*import { url } from "../helpers/contains.js";
+import { url } from "../helpers/contains.js";
 import { GetData } from "../helpers/peticiones.js";
 
 const template = document.getElementById('template').content;
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded",
 
     });
 
-*/
+
 
 const perro = document.getElementById('container-perro');
 const gato = document.getElementById('container-gato');

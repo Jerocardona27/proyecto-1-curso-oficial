@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
+
 * {
     background-color: #FEC7D7;
     margin: 0;
@@ -155,13 +156,17 @@
 }
 
 #navBar {
-    margin-top: 20px; /* Ajusta según sea necesario para dejar espacio arriba */
-    background-color: #FFFFFE; /* Cambia el color de fondo según tus preferencias */
+    margin-top: 20px;
+    /* Ajusta según sea necesario para dejar espacio arriba */
+    background-color: #FFFFFE;
+    /* Cambia el color de fondo según tus preferencias */
 }
 
 .btnNav {
-    font-size: 14px; /* Ajusta el tamaño del texto según tus preferencias */
-    margin-right: 10px; /* Ajusta el espacio entre los botones según sea necesario */
+    font-size: 14px;
+    /* Ajusta el tamaño del texto según tus preferencias */
+    margin-right: 10px;
+    /* Ajusta el espacio entre los botones según sea necesario */
 }
 
 /* Ajustes para la versión móvil */
@@ -175,15 +180,57 @@
     }
 
     .navbar-toggler {
-        order: -1; /* Mueve el botón de la hamburguesa al principio en la versión móvil */
+        order: -1;
+        /* Mueve el botón de la hamburguesa al principio en la versión móvil */
     }
 
     .btnNav {
-        margin: 10px 0; /* Ajusta el espacio entre los botones en la versión móvil */
+        margin: 10px 0;
+        /* Ajusta el espacio entre los botones en la versión móvil */
     }
 }
 
 
 #container-buttons {
     flex-direction: row;
+}
+
+
+.template {
+    background-color: #FEC7D7;
+}
+
+#ContainerCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 275px;
+    overflow: hidden; 
+}
+
+.card {
+    width: calc(50% - 20px); /* Esto establece el ancho de cada tarjeta al 50% del contenedor */
+    height: auto;
+    border-radius: 16px;
+    overflow: hidden; 
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: calc(33.33% - 20px); /* En pantallas más grandes, cambia a un diseño de 3 columnas */
+    }
+}
+
+@media (min-width: 1200px) {
+    .card {
+        width: calc(25% - 20px); /* En pantallas aún más grandes, cambia a un diseño de 4 columnas */
+    }
 }
