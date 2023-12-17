@@ -1,41 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
-*{
+
+* {
     background-color: #FEC7D7;
     margin: 0;
     padding: 0;
 }
-.contenedor{
+
+.contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 /*Pagina 1 y Pagina 2*/
-.imagenPag1{
+.imagenPag1 {
     width: 30px;
     margin-top: 300px;
     cursor: pointer;
 }
-.imagenPag2{
+
+.imagenPag2 {
     width: 130px;
     margin-top: 250px;
     cursor: pointer;
 }
+
 /*Pagina 3 y Pagina 4*/
 
-.ImagenPerroAcostado, .ImagenMuchacha{
+.ImagenPerroAcostado,
+.ImagenMuchacha {
     width: 327px;
     height: 327px;
     margin-top: 10px;
 }
-.titulopagina3, .titulopagina4{
+
+.titulopagina3,
+.titulopagina4 {
     text-align: center;
     margin-top: 30px;
     font-family: nunito;
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
 }
-.parrafopagina3, .parrafopagina4{
+
+.parrafopagina3,
+.parrafopagina4 {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 60px;
@@ -44,7 +53,8 @@
     font-weight: 550;
 }
 
-.botonpagina3, .botonpagina4{
+.botonpagina3,
+.botonpagina4 {
     margin-top: 20px;
     background-color: #0E172C;
     color: white;
@@ -55,33 +65,125 @@
     cursor: pointer;
     text-align: center;
 }
-.botonpagina4{
+
+.botonpagina4 {
     margin-top: 5px;
 }
 
 /*Pagina 5*/
-.titulos h1{
-    margin-top: 50px;
-    margin-left: 60px;
+.titulos h1 {
+    position: absolute;
+    width: 327px;
+    height: 66px;
+    top: 48px;
+    left: 24px;
     font-family: 'Nunito', sans-serif;
-    font-weight: 900;
-    font-size: 35px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 327px;
+    color: #0E172C;
 }
-.titulos h2{
-    margin-top: 80px;
-    margin-left: 60px;
-    font-weight: 560;
+
+.titulos h2 {
+    position: absolute;
+    color: #0E172C;
+    top: 146px;
+    left: 24px;
     font-family: 'Nunito', sans-serif;
-    font-size: 30px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.027px;
 }
 
 /*Media Queries*/
-    @media only screen and (min-width:400px) and (max-width:800px) {
-        .contenedor{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+@media only screen and (min-width:400px) and (max-width:800px) {
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-    
+
+}
+
+.container-icon {
+    background-color: #0E172C;
+    display: flex;
+    width: 156px;
+    padding: 8px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 8px;
+    height: 80px;
+}
+
+#container-perro {
+    position: absolute;
+    top: 179px;
+    left: 24px;
+}
+
+#container-gato {
+    position: absolute;
+    top: 179px;
+    right: 24px;
+}
+
+
+
+.icon-animales {
+    width: 40px;
+    height: 40px;
+    width: 64px;
+    height: 64px;
+    top: 8px;
+    left: 8px;
+    background-color: #85D1CE;
+    border-radius: 100px;
+
+}
+
+.icon-form {
+    background-color: #85D1CE;
+    width: 64px;
+    height: 64px;
+    border-radius: 100px;
+}
+
+#navBar {
+    margin-top: 20px; /* Ajusta según sea necesario para dejar espacio arriba */
+    background-color: #FFFFFE; /* Cambia el color de fondo según tus preferencias */
+}
+
+.btnNav {
+    font-size: 14px; /* Ajusta el tamaño del texto según tus preferencias */
+    margin-right: 10px; /* Ajusta el espacio entre los botones según sea necesario */
+}
+
+/* Ajustes para la versión móvil */
+@media (max-width: 991px) {
+    #navBar {
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .navbar-toggler {
+        order: -1; /* Mueve el botón de la hamburguesa al principio en la versión móvil */
+    }
+
+    .btnNav {
+        margin: 10px 0; /* Ajusta el espacio entre los botones en la versión móvil */
+    }
+}
+
+
+#container-buttons {
+    flex-direction: row;
 }

@@ -47,3 +47,14 @@ document.addEventListener("DOMContentLoaded",
 
 */
 
+const perro = document.getElementById('container-perro');
+const gato = document.getElementById('container-gato');
+
+perro.addEventListener('click', ()=> {
+    console.log("hola, manuel es puto")
+})
+
+gato.addEventListener('click', ()=> {
+    console.log("hola, manuel es puto")
+})
+
