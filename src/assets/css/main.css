@@ -7,10 +7,32 @@
     padding: 0;
 }
 
-.contenedor {
+.contenedor-1{
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    place-items: center;
+}
+.contenedor-2{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+.contenedor-3{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    
+}
+.contenedor-4{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
 }
 
 /*Pagina 1 y Pagina 2*/
@@ -32,7 +54,7 @@
 .ImagenMuchacha {
     width: 327px;
     height: 327px;
-    margin-top: 10px;
+    
 }
 
 .titulopagina3,
@@ -100,16 +122,6 @@
     letter-spacing: 0.027px;
 }
 
-/*Media Queries*/
-@media only screen and (min-width:400px) and (max-width:800px) {
-    .contenedor {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-}
 
 .container-icon {
     background-color: #0E172C;
@@ -155,50 +167,12 @@
     border-radius: 100px;
 }
 
-#navBar {
-    margin-top: 20px;
-    /* Ajusta según sea necesario para dejar espacio arriba */
-    background-color: #FFFFFE;
-    /* Cambia el color de fondo según tus preferencias */
-}
-
-.btnNav {
-    font-size: 14px;
-    /* Ajusta el tamaño del texto según tus preferencias */
-    margin-right: 10px;
-    /* Ajusta el espacio entre los botones según sea necesario */
-}
-
-/* Ajustes para la versión móvil */
-@media (max-width: 991px) {
-    #navBar {
-        position: fixed;
-        width: 100%;
-        bottom: 0px;
-        left: 0;
-        z-index: 1000;
-    }
-
-    .navbar-toggler {
-        order: -1;
-        /* Mueve el botón de la hamburguesa al principio en la versión móvil */
-    }
-
-    .btnNav {
-        margin: 10px 0;
-        /* Ajusta el espacio entre los botones en la versión móvil */
-    }
-}
-
-
 #container-buttons {
     flex-direction: row;
 }
 
 
-.template {
-    background-color: #FEC7D7;
-}
+
 
 #ContainerCards {
     display: flex;
@@ -216,13 +190,15 @@
     border-radius: 16px;
     overflow: hidden; 
 }
+.template {
+    background-color: #FEC7D7;
+}
 
 .card img {
     width: 100%;
     height: auto;
     border-radius: 16px;
 }
-
 @media (min-width: 768px) {
     .card {
         width: calc(33.33% - 20px); /* En pantallas más grandes, cambia a un diseño de 3 columnas */
@@ -233,4 +209,14 @@
     .card {
         width: calc(25% - 20px); /* En pantallas aún más grandes, cambia a un diseño de 4 columnas */
     }
+}
+
+
+.cabeza {
+    background-color: white;
+}
+.etiquetas{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
 }

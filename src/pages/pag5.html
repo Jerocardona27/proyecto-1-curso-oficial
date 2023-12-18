@@ -11,8 +11,6 @@
 </head>
 
 
-<!---Parte de arriba----->
-
 <body>
     <section>
         <div class="titulos">
@@ -35,7 +33,7 @@
         </button>
     </section>
 
-    <!---Card----->
+    
 
     <div class="container-fluid" id="ContainerCards">
         <template id="template">
@@ -45,27 +43,28 @@
     </div>
 
 
-    <!---NavBar----->
+    
 
-    <nav class="navbar navbar-expand-lg" id="navBar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex" id="container-buttons">
-                    <li class="nav-item">
-                        <button class="btnNav" id="btnTodas" type="button">
+    <header class="cabeza">
+        
+                <ul class="etiquetas">
+                    <li >
+                        <button class="btnNav"  type="button">
                             <img src="https://res.cloudinary.com/dfl99nrne/image/upload/v1702650052/Adopci%C3%B3n/casa_gtkp6q.png"
                                 alt="">Home</button>
                     </li>
                     <li class="nav-item">
-                        <button class="btnNav" id="btnMas" type="button">Más valoradas</button>
+                        <button class="btnNav"  type="button"><img src="https://res.cloudinary.com/djrof3ov8/image/upload/v1702658586/Adopcion/iconos/chat_xvbre4.jpg" alt="Comentarios"></button>
                     </li>
                     <li class="nav-item">
-                        <button class="btnNav" id="btnMenos" type="button">Menos valoradas</button>
+                        <button class="btnNav" type="button"><img src="https://res.cloudinary.com/djrof3ov8/image/upload/v1702658586/Adopcion/iconos/corazon_fkjywh.jpg" alt="Me gusta"></button>
+                    </li>
+                    <li>
+                        <button class="btnNav"><img src="https://res.cloudinary.com/djrof3ov8/image/upload/v1702658586/Adopcion/iconos/cuenta_nwzhck.jpg" alt="Perfil"></button>
                     </li>
                 </ul>
-            </a>
-        </div>
-    </nav>
+        
+    </header>
 
     <!----scripts----->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
