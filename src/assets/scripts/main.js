@@ -4,16 +4,19 @@ console.log('hola')
 import { url } from "../helpers/contains.js";
 import { GetData } from "../helpers/peticiones.js";
 
+const botonperro = document.getElementById('icon-perro');
 const template = document.getElementById('template').content;
 const container = document.getElementById('ContainerCards');
 
-document.addEventListener("DOMContentLoaded",
+botonperro.addEventListener("click",
     async () => {
         const response = await GetData(url);
 
         console.log("La url", url)
 
         let demise = document.createDocumentFragment()
+
+        container.innerHTML="";
 
         response.forEach(item => {
 
@@ -47,14 +50,5 @@ document.addEventListener("DOMContentLoaded",
 
 
 
-const perro = document.getElementById('container-perro');
-const gato = document.getElementById('container-gato');
 
-perro.addEventListener('click', ()=> {
-    console.log("hola, manuel es puto")
-})
-
-gato.addEventListener('click', ()=> {
-    console.log("hola, manuel es puto")
-})
 
