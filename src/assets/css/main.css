@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
 
-* {
-    background-color: #FEC7D7;
+* { 
+    
+}
+
+.body-1 {
     margin: 0;
     padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background-color: #FEC7D7;
 }
+
+
 
 .contenedor-1 {
     height: 100vh;
@@ -64,7 +73,6 @@
 .titulopagina4 {
     text-align: center;
     margin-top: 30px;
-    font-family: nunito;
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
 }
@@ -76,7 +84,7 @@
     margin-bottom: 60px;
     font-family: 'Nunito', sans-serif;
     color: #535353;
-    font-weight: 550;
+    font-weight: 800;
 }
 
 .botonpagina3,
@@ -220,15 +228,39 @@
     }
 }
 
-
-.cabeza {
+.abajo{
     background-color: white;
+    align-self: flex-end;
+    width: 100%;
+    text-align: center;
 }
 
-.etiquetas {
+.btnNav{
+    background-color: white;
+    border: none;
+    
+}
+
+#Home{
+    background-color: #0E172C;
     display: flex;
+    padding: 8px 16px;
+    gap: 8px;
+    border-radius: 80px;
+    color:  #85D1CE;
+    margin-left: 24px;
+    
+
+}
+
+
+
+.etiquetas {
     justify-content: space-between;
     height: 70px;
+    background-color: white;
+    place-items: center;
+    
 }
 
 .animales-text {
