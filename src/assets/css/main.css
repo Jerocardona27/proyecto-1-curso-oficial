@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
 
-* { 
-    
-}
 
-.body-1 {
+
+.body-pag5 {
     margin: 0;
     padding: 0;
-    display: flex;
     min-height: 100vh;
     flex-wrap: wrap;
     background-color: #FEC7D7;
@@ -16,30 +13,8 @@
 
 
 
-.contenedor-1 {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    place-items: center;
-}
 
-.contenedor-2 {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    place-items: center;
-}
-
-.contenedor-3 {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    place-items: center;
-
-}
-
-.contenedor-4 {
+.contenedor {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -106,33 +81,26 @@
 
 /*Pagina 5*/
 .titulos h1 {
-    position: absolute;
-    width: 327px;
-    height: 66px;
-    top: 48px;
-    left: 24px;
     font-family: 'Nunito', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 800;
-    line-height: normal;
-    width: 327px;
+    
     color: #0E172C;
 }
 
 .titulos h2 {
-    position: absolute;
+
     color: #0E172C;
-    top: 146px;
-    left: 24px;
     font-family: 'Nunito', sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
-    letter-spacing: 0.027px;
+    margin-top: 2em;
 }
-
+.titulos{
+    margin-top: 2em;
+    margin-left: 20px;
+}
 
 .container-icon {
     background-color: #0E172C;
@@ -146,16 +114,11 @@
     flex-direction: row;
 }
 
-#container-perro {
-    position: absolute;
-    top: 179px;
-    left: 24px;
-}
-
-#container-gato {
-    position: absolute;
-    top: 179px;
-    right: 24px;
+.centrar-animales{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
 }
 
 
@@ -192,8 +155,9 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
-    margin-top: 275px;
+    margin-top: 100px;
     overflow: hidden;
+    margin-bottom: 100px;
 }
 
 .card {
@@ -230,9 +194,9 @@
 
 .abajo{
     background-color: white;
-    align-self: flex-end;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    text-align: center;
 }
 
 .btnNav{
@@ -278,5 +242,6 @@
     justify-content: center;
     margin: 0;
     padding: 0;
+    
 
 }
