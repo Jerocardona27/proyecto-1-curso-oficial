@@ -1,0 +1,11 @@
+*{
+    background-color: #FEC7D7;
+}
+
+.contenedor {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+}

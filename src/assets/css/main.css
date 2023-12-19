@@ -22,18 +22,7 @@
     place-items: center;
 }
 
-/*Pagina 1 y Pagina 2*/
-.imagenPag1 {
-    width: 30px;
-    margin-top: 300px;
-    cursor: pointer;
-}
 
-.imagenPag2 {
-    width: 130px;
-    margin-top: 250px;
-    cursor: pointer;
-}
 
 /*Pagina 3 y Pagina 4*/
 
