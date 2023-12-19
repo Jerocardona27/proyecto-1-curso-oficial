@@ -3,11 +3,8 @@
 
 
 
-.body-pag5 {
-    margin: 0;
-    padding: 0;
+.body{
     min-height: 100vh;
-    flex-wrap: wrap;
     background-color: #FEC7D7;
 }
 
@@ -24,57 +21,11 @@
 
 
 
-/*Pagina 3 y Pagina 4*/
-
-.ImagenPerroAcostado,
-.ImagenMuchacha {
-    width: 327px;
-    height: 327px;
-
-}
-
-.titulopagina3,
-.titulopagina4 {
-    text-align: center;
-    margin-top: 30px;
-    font-weight: bold;
-    font-family: 'Nunito', sans-serif;
-}
-
-.parrafopagina3,
-.parrafopagina4 {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 60px;
-    font-family: 'Nunito', sans-serif;
-    color: #535353;
-    font-weight: 800;
-}
-
-.botonpagina3,
-.botonpagina4 {
-    margin-top: 20px;
-    background-color: #0E172C;
-    color: white;
-    padding: 8px 100px;
-    border: none;
-    border-radius: 10px;
-    font-family: 'Nunito', sans-serif;
-    cursor: pointer;
-    text-align: center;
-}
-
-.botonpagina4 {
-    margin-top: 5px;
-}
-
-/*Pagina 5*/
 .titulos h1 {
     font-family: 'Nunito', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 800;
-    
     color: #0E172C;
 }
 

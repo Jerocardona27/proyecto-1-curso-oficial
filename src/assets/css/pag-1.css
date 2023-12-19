@@ -8,5 +8,10 @@
     flex-direction: column;
     justify-content: center;
     place-items: center;
+
+}
+#imagenPag1{
+    width: 3vh;
+    height: 3vh;
 }
 
