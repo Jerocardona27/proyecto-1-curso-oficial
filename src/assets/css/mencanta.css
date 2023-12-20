@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+
+.body{
+    background-color: #FEC7D7;
+}
+
+
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+.abajo{
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.btnNav{
+    background-color: white;
+    border: none;
+    
+}
+
+#Home{
+    background-color: #0E172C;
+    display: flex;
+    padding: 8px 16px;
+    gap: 8px;
+    border-radius: 80px;
+    color:  #85D1CE;
+    margin-left: 24px;
+
+}
+
+
+
+.etiquetas {
+    justify-content: space-between;
+    height: 70px;
+    background-color: white;
+    place-items: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    
+}
+
+.link{
+    text-decoration: none;
+}

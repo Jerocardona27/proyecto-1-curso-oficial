@@ -17,6 +17,7 @@
     flex-direction: column;
     justify-content: center;
     place-items: center;
+    
 }
 
 
@@ -95,10 +96,10 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
-    overflow: hidden;
-    margin-bottom: 100px;
+    margin-top: 5%;
+    margin-bottom: 25%;
 }
+
 
 .card {
     width: calc(50% - 20px);
@@ -106,6 +107,7 @@
     height: auto;
     border-radius: 16px;
     overflow: hidden;
+    
 }
 
 .template {
@@ -113,9 +115,7 @@
 }
 
 .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 16px;
+    
 }
 
 @media (min-width: 768px) {
@@ -152,8 +152,7 @@
     gap: 8px;
     border-radius: 80px;
     color:  #85D1CE;
-    margin-left: 24px;
-    
+
 
 }
 
@@ -164,6 +163,8 @@
     height: 70px;
     background-color: white;
     place-items: center;
+    margin-left: 24px;
+    margin-right: 24px;
     
 }
 
