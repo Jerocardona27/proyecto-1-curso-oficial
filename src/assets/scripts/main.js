@@ -126,14 +126,34 @@ const DetallesAnimales = async (id) => {
 
 
 
-    const { Title, Image, Year, Raza, Sexo, Description, ImgYear, Location, ImgLocation, ImgRaza, PrevOwner, Cariñoso, ImgCariñoso, Inquieto, ImgInquieto, Juguetón, ImgJuguetón } = detail;
+    const { Title, Image, Year, Raza, Sexo, Description, ImgYear, Location, ImgLocation, ImgRaza, PrevOwner, PrevOwnerImg, Cariñoso, ImgCariñoso, Inquieto, ImgInquieto, Juguetón, ImgJuguetón } = detail;
 
 
 
     OGBodyContent.style.display = 'none';
 
-    templateDetails.querySelector('h5').textContent = Title;
+
     templateDetails.getElementById('imgdetails').setAttribute('src', Image);
+    templateDetails.querySelector('h1').textContent = Title;
+    templateDetails.getElementById('imgSexo').setAttribute('src', Sexo);
+    templateDetails.getElementById('imgRaza').setAttribute('src', ImgRaza);
+    templateDetails.querySelector('.razatext').textContent = Raza;
+    templateDetails.getElementById('imgYear').setAttribute('src', ImgYear);
+    templateDetails.querySelector('.edadtext').textContent = Year;
+    templateDetails.getElementById('imgLocation').setAttribute('src', ImgLocation);
+    templateDetails.querySelector('.locationtext').textContent = Location;
+    templateDetails.getElementById('imgCariñoso').setAttribute('src', ImgCariñoso);
+    templateDetails.querySelector('.cariñosotext').textContent = Cariñoso;
+    templateDetails.getElementById('imgInquieto').setAttribute('src', ImgInquieto);
+    templateDetails.querySelector('.inquietotext').textContent = Inquieto;
+    templateDetails.getElementById('imgJugueton').setAttribute('src', ImgJuguetón);
+    templateDetails.querySelector('.juguetontext').textContent = Juguetón;
+    templateDetails.getElementById('historiatitle').textContent = `Historia de ${Title}`
+    templateDetails.querySelector('.historiatext').textContent = Description;
+    templateDetails.getElementById('imgOwner').setAttribute('src', PrevOwnerImg)
+    templateDetails.querySelector('.Ownertext').textContent = `Publicado por ${PrevOwner}`;
+
+
 
     // Hace visible el contenedor de detalles
     detalleContainer.style.display = 'block';
@@ -189,9 +209,9 @@ const DetallesAnimales1 = async (id) => {
 
     const { Title, Image, Year, Raza, Sexo, Description, ImgYear, Location, ImgLocation, ImgRaza, PrevOwner, Cariñoso, ImgCariñoso, Inquieto, ImgInquieto, Juguetón, ImgJuguetón } = detail;
 
-  
 
-    templateDetails.querySelector('h5').textContent = Title;
+
+    templateDetails.querySelector('h1').textContent = Title;
     templateDetails.getElementById('imgdetails').setAttribute('src', Image);
 
     // Hace visible el contenedor de detalles
