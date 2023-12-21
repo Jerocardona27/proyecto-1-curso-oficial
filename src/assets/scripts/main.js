@@ -170,33 +170,53 @@ const DetallesAnimales = async (id) => {
 
 
 //---------------details gatos---------------//
-/*
+
 const DetallesAnimales1 = async (id) => {
     console.log('recibí un: ', id);
     const response = await GetData(url2);
     const detail = response?.find((fi) => fi.id === id);
 
 
-    const OGBodyContent = document.getElementById('allbody');
-
-
-
-
+    const OGBodyContent = document.getElementById('container-all');
 
     OGBodyContent.style.display = 'none'
 
+
+
+
+
+
+
     const { Title, Image, Year, Raza, Sexo, Description, ImgYear, Location, ImgLocation, ImgRaza, PrevOwner, Cariñoso, ImgCariñoso, Inquieto, ImgInquieto, Juguetón, ImgJuguetón } = detail;
 
-
-
-
+  
 
     templateDetails.querySelector('h5').textContent = Title;
     templateDetails.getElementById('imgdetails').setAttribute('src', Image);
 
+    // Hace visible el contenedor de detalles
+    detalleContainer.style.display = 'block';
+
+    // Limpia el contenedor de detalles antes de agregar uno nuevo
+    detalleContainer.innerHTML = '';
+
+
     const cloning = templateDetails.cloneNode(true)
 
-    document.body.appendChild(cloning)
+    detalleContainer.appendChild(cloning)
+
+
+
+    const btnBack = document.getElementById('btnBack');
+
+
+    btnBack.addEventListener('click', () => {
+
+
+        OGBodyContent.style.display = 'block'
+        detalleContainer.style.display = 'none'
+        detalleContainer.innerHTML = '';
+    })
 
 
 
@@ -211,7 +231,7 @@ const DetallesAnimales1 = async (id) => {
 
 
 
-*/
+
 
 
 
