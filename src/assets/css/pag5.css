@@ -3,7 +3,7 @@
 
 
 
-.body{
+.body {
     min-height: 100vh;
     background-color: #FEC7D7;
 }
@@ -17,7 +17,7 @@
     flex-direction: column;
     justify-content: center;
     place-items: center;
-    
+
 }
 
 
@@ -38,7 +38,8 @@
     font-weight: 600;
     margin-top: 2em;
 }
-.titulos{
+
+.titulos {
     margin-top: 2em;
     margin-left: 20px;
 }
@@ -54,14 +55,6 @@
     height: 80px;
     flex-direction: row;
 }
-
-.centrar-animales{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-}
-
 
 
 .icon-animales {
@@ -107,7 +100,7 @@
     height: auto;
     border-radius: 16px;
     overflow: hidden;
-    
+
 }
 
 .template {
@@ -115,7 +108,8 @@
 }
 
 .card img {
-    
+    background-color: #FEC7D7;
+
 }
 
 @media (min-width: 768px) {
@@ -132,26 +126,26 @@
     }
 }
 
-.abajo{
+.abajo {
     background-color: white;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-.btnNav{
+.btnNav {
     background-color: white;
     border: none;
-    
+
 }
 
-#Home{
+#Home {
     background-color: #0E172C;
     display: flex;
     padding: 8px 16px;
     gap: 8px;
     border-radius: 80px;
-    color:  #85D1CE;
+    color: #85D1CE;
 
 
 }
@@ -165,7 +159,7 @@
     place-items: center;
     margin-left: 24px;
     margin-right: 24px;
-    
+
 }
 
 .animales-text {
@@ -183,6 +177,12 @@
     justify-content: center;
     margin: 0;
     padding: 0;
-    
+
+
+}
+
+.d-flex {
+    align-items: center;
+    justify-content: center;
 
 }

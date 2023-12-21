@@ -12,68 +12,99 @@
 
 
 <body class="body">
-    <section class="d-flex">
-        <div class="titulos">
-            <h1>Adopta una adorable <br>mascota</h1>
-            <h2>Categoria de mascotas</h2>
-        </div>
-    </section>
-    <section class="centrar-animales d-flex justify-content-around">
-        <button class="container-icon" id="container-perro">
+    <section id="container-all">
+        <section class="d-flex">
+            <div class="titulos">
+                <h1>Adopta una adorable <br>mascota</h1>
+                <h2>Categoria de mascotas</h2>
+                <li class="nav-item">
+                    <a href="./details.html">
+                        <button class="btnNav" id="Home" type="button"><img
+                                src="https://res.cloudinary.com/djrof3ov8/image/upload/v1702658586/Adopcion/iconos/chat_xvbre4.jpg"
+                                alt="Comentarios">Details</button></a>
+                </li>
+            </div>
+        </section>
+        <section class="centrar-animales d-flex justify-content-around">
+            <button class="container-icon" id="container-perro">
                 <img src="https://res.cloudinary.com/dfl99nrne/image/upload/v1702650054/Adopci%C3%B3n/icono_perro_duhth0.png"
                     alt="" class="icon-animales" id="icon-perro">
-            <p class="animales-text">Perros</p>
-        </button>
-        <button class="container-icon" id="container-gato"> 
+                <p class="animales-text">Perros</p>
+            </button>
+            <button class="container-icon" id="container-gato">
                 <img src="https://res.cloudinary.com/dfl99nrne/image/upload/v1702650053/Adopci%C3%B3n/e2727c0c411d2e9afa03c89a933e1afe_smoi8s.png"
                     alt="" class="icon-animales" id="icon-gato">
-            <p class="animales-text">Gatos</p>
-        </button>
-    </section>
+                <p class="animales-text">Gatos</p>
+            </button>
+        </section>
+
+        <!-----tarjeta------>
+
+        <div class="container-fluid" id="ContainerCards">
+            <template id="template">
+                <div class="card" class="cards1">
+                    <img src="..." class="card-img-top" alt="...">
+            </template>
+        </div>
 
 
+        <!-----Prueba------>
 
-    <div class="container-fluid" id="ContainerCards">
-        <template id="template">
-            <div class="card" class="cards1">
-                <img src="..." class="card-img-top" alt="...">
+        <template id="TemplateDetails">
+            <button class="container-icon" id="container-perro">
+                <img src="https://res.cloudinary.com/dfl99nrne/image/upload/v1703119589/Adopci%C3%B3n/Component_1_prwfvj.png">
+            </button>
+            <center>
+                <div class="card" style="width: 25rem">
+                    <img src="..." class="card-img-top" alt="..." id="imgdetails">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+
+                </div>
+            </center>
         </template>
-    </div>
 
 
 
 
-    <div class="abajo">
+        <div class="abajo">
 
-        <ul class="etiquetas nav">
-            <li>
-                
-                <button class="btnNav" id="Home" type="button" >
-                    <img src="https://res.cloudinary.com/dfl99nrne/image/upload/v1702650052/Adopci%C3%B3n/casa_gtkp6q.png"
-                        alt="">Home</button>
-            </li>
-            <li class="nav-item">
-                <a href="./comentarios.html">
-                <button class="btnNav" type="button"><img
-                        src="https://res.cloudinary.com/djrof3ov8/image/upload/v1702658586/Adopcion/iconos/chat_xvbre4.jpg"
-                        alt="Comentarios"></button></a>
-            </li>
-            <li class="nav-item">
-            <a href="./mencanta.html">
-                <button class="btnNav" type="button"><img
-                        src="https://res.cloudinary.com/djrof3ov8/image/upload/v1702658586/Adopcion/iconos/corazon_fkjywh.jpg"
-                        alt="Me gusta"></button></a>
-            </li>
-            <li>
-                <a href="./perfil.html">
-                <button class="btnNav"><img
-                        src="https://res.cloudinary.com/djrof3ov8/image/upload/v1702658586/Adopcion/iconos/cuenta_nwzhck.jpg"
-                        alt="Perfil"></button></a>
-            </li>
-        </ul>
+            <ul class="etiquetas nav">
+                <li>
 
-    </div>
+                    <button class="btnNav" id="Home" type="button">
+                        <img src="https://res.cloudinary.com/dfl99nrne/image/upload/v1702650052/Adopci%C3%B3n/casa_gtkp6q.png"
+                            alt="">Home</button>
+                </li>
+                <li class="nav-item">
+                    <a href="./comentarios.html">
+                        <button class="btnNav" type="button"><img
+                                src="https://res.cloudinary.com/djrof3ov8/image/upload/v1702658586/Adopcion/iconos/chat_xvbre4.jpg"
+                                alt="Comentarios"></button></a>
+                </li>
+                <li class="nav-item">
+                    <a href="./mencanta.html">
+                        <button class="btnNav" type="button"><img
+                                src="https://res.cloudinary.com/djrof3ov8/image/upload/v1702658586/Adopcion/iconos/corazon_fkjywh.jpg"
+                                alt="Me gusta"></button></a>
+                </li>
+                <li>
+                    <a href="./perfil.html">
+                        <button class="btnNav"><img
+                                src="https://res.cloudinary.com/djrof3ov8/image/upload/v1702658586/Adopcion/iconos/cuenta_nwzhck.jpg"
+                                alt="Perfil"></button></a>
+                </li>
+            </ul>
 
+        </div>
+    </section>
     <!----scripts----->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
