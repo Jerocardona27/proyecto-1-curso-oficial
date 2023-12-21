@@ -11,6 +11,8 @@ const botongato = document.getElementById('icon-gato');
 const template = document.getElementById('template').content;
 const container = document.getElementById('ContainerCards');
 const templateDetails = document.getElementById('TemplateDetails').content;
+const btnBack = document.getElementById('btnBack');
+
 
 
 botonperro.addEventListener("click",
@@ -46,7 +48,7 @@ botonperro.addEventListener("click",
         container.appendChild(demise)
         container.addEventListener('click', async (e) => {
             DetallesAnimales(e.target.id);
-            
+
 
 
         });
@@ -91,6 +93,12 @@ botongato.addEventListener("click",
 
 
         container.appendChild(demise2)
+        container.addEventListener('click', async (e) => {
+            DetallesAnimales1(e.target.id);
+
+
+
+        });
 
     });
 
@@ -104,11 +112,68 @@ const DetallesAnimales = async (id) => {
 
 
     //Crear los detalles en la misma 
-    //página 5, borrando el resto del contenido de la misma//
+    //página 5, ocultando el resto del contenido de la misma//
 
-    const OGBodyContent = document.body.innerHTML;
+    const OGBodyContent = document.getElementById('container-all');
 
-    document.body.innerHTML = "";
+
+
+
+
+
+
+
+
+    const { Title, Image, Year, Raza, Sexo, Description, ImgYear, Location, ImgLocation, ImgRaza, PrevOwner, Cariñoso, ImgCariñoso, Inquieto, ImgInquieto, Juguetón, ImgJuguetón } = detail;
+
+
+
+    OGBodyContent.style.display = 'none';
+
+    templateDetails.querySelector('h5').textContent = Title;
+    templateDetails.getElementById('imgdetails').setAttribute('src', Image);
+
+    const cloning = templateDetails.cloneNode(true)
+
+    document.body.appendChild(cloning)
+
+
+
+    const btnBack = document.getElementById('btnBack');
+
+
+    btnBack.addEventListener('click', ()=> {
+
+        cloning.textContent = '';
+    OGBodyContent.style.display = 'block'
+
+    })
+    
+
+
+
+
+
+
+
+};
+
+
+//---------------details gatos---------------//
+
+const DetallesAnimales1 = async (id) => {
+    console.log('recibí un: ', id);
+    const response = await GetData(url2);
+    const detail = response?.find((fi) => fi.id === id);
+
+
+    const OGBodyContent = document.getElementById('allbody');
+
+
+
+
+
+    OGBodyContent.style.display = 'none'
 
     const { Title, Image, Year, Raza, Sexo, Description, ImgYear, Location, ImgLocation, ImgRaza, PrevOwner, Cariñoso, ImgCariñoso, Inquieto, ImgInquieto, Juguetón, ImgJuguetón } = detail;
 
@@ -124,11 +189,6 @@ const DetallesAnimales = async (id) => {
     document.body.appendChild(cloning)
 
 
-//---------devolver al body a su estado original, botón back-------//
-
-    
-
-
 
 
 
@@ -137,19 +197,11 @@ const DetallesAnimales = async (id) => {
 
 
 
-//---------------details gatos---------------//
-
-/*const DetallesAnimal = async (id) => {
-    console.log('recibí un: ', id)
-
-    const response = await GetData()
 
 
 
-}
-console.log("hola")
 
-DetallesAnimal()*/
+
 
 
 
