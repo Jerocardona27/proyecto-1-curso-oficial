@@ -12,6 +12,8 @@ const template = document.getElementById('template').content;
 const container = document.getElementById('ContainerCards');
 const templateDetails = document.getElementById('TemplateDetails').content;
 const btnBack = document.getElementById('btnBack');
+const detalleContainer = document.getElementById('detalleContainer');
+
 
 
 
@@ -133,22 +135,30 @@ const DetallesAnimales = async (id) => {
     templateDetails.querySelector('h5').textContent = Title;
     templateDetails.getElementById('imgdetails').setAttribute('src', Image);
 
+    // Hace visible el contenedor de detalles
+    detalleContainer.style.display = 'block';
+
+    // Limpia el contenedor de detalles antes de agregar uno nuevo
+    detalleContainer.innerHTML = '';
+
+
     const cloning = templateDetails.cloneNode(true)
 
-    document.body.appendChild(cloning)
+    detalleContainer.appendChild(cloning)
 
 
 
     const btnBack = document.getElementById('btnBack');
 
 
-    btnBack.addEventListener('click', ()=> {
+    btnBack.addEventListener('click', () => {
 
-        cloning.textContent = '';
-    OGBodyContent.style.display = 'block'
 
+        OGBodyContent.style.display = 'block'
+        detalleContainer.style.display = 'none'
+        detalleContainer.innerHTML = '';
     })
-    
+
 
 
 
@@ -160,7 +170,7 @@ const DetallesAnimales = async (id) => {
 
 
 //---------------details gatos---------------//
-
+/*
 const DetallesAnimales1 = async (id) => {
     console.log('recibí un: ', id);
     const response = await GetData(url2);
@@ -201,7 +211,7 @@ const DetallesAnimales1 = async (id) => {
 
 
 
-
+*/
 
 
 
