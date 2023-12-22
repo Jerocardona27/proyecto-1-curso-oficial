@@ -148,15 +148,12 @@
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
-    /* 150% */
     letter-spacing: 0.08px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
-
-
 }
 
 .d-flex {
@@ -165,17 +162,17 @@
 
 }
 
-.contenedor-back{
-    background-color: #0E172C;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    border-radius: 8px;
-    height: 80px;
-    flex-direction: row;
+#btnBack{
+    position: fixed;
+    background: #0E172C;
+    border-radius: 50%;
+    margin: 5%;
+    padding: 10px;
+    z-index: 1;
+    width: auto;
+    height: auto;
 }
 
-#btnBack{
-    
+.div-cartas{
+    background-image: url(https://res.cloudinary.com/dfl99nrne/image/upload/v1702650577/Adopci%C3%B3n/Card_euo9vf.jpg);
 }
