@@ -91,39 +91,17 @@
     justify-content: center;
     margin-top: 5%;
     margin-bottom: 25%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
-.card {
-    width: calc(50% - 20px);
-    /* Esto establece el ancho de cada tarjeta al 50% del contenedor */
+#card {
+    width: auto;
     height: auto;
     border-radius: 16px;
     overflow: hidden;
 
-}
-
-.template {
-    background-color: #FEC7D7;
-}
-
-.card img {
-    background-color: #FEC7D7;
-
-}
-
-@media (min-width: 768px) {
-    .card {
-        width: calc(33.33% - 20px);
-        /* En pantallas más grandes, cambia a un diseño de 3 columnas */
-    }
-}
-
-@media (min-width: 1200px) {
-    .card {
-        width: calc(25% - 20px);
-        /* En pantallas aún más grandes, cambia a un diseño de 4 columnas */
-    }
 }
 
 .abajo {
@@ -185,4 +163,19 @@
     align-items: center;
     justify-content: flex-start;
 
+}
+
+.contenedor-back{
+    background-color: #0E172C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 8px;
+    height: 80px;
+    flex-direction: row;
+}
+
+#btnBack{
+    
 }

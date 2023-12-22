@@ -35,15 +35,15 @@
 
         <!-----tarjeta------>
 
-        <div class="container-fluid" id="ContainerCards">
+        <div id="ContainerCards">
             <template id="template">
-                <div class="card" class="cards1">
-                    <img src="..." class="card-img-top" alt="...">
+                <div id="card">
+                    <img src="..." alt="...">
             </template>
         </div>
 
 
-        <!-----Prueba------>
+        <!-----Barra con los iconos------>
 
 
 
@@ -84,15 +84,16 @@
 
     <div id="detalleContainer">
         <template id="TemplateDetails">
-            <button class="container-icon" id="btnBack">
+            <div class="contenedor-back">
+            <button id="btnBack">
                 <a href="../pages/pag5.html"></a>
-                <img
-                    src="https://res.cloudinary.com/dfl99nrne/image/upload/v1703119589/Adopci%C3%B3n/Component_1_prwfvj.png">
-            </button>
-            <center>
+                    <img src="https://res.cloudinary.com/dfl99nrne/image/upload/v1703119589/Adopci%C3%B3n/Component_1_prwfvj.png">
+                </button>
+            </div>            
                 <div class="card" style="width: 25rem">
                     <img src="..." class="card-img-top" alt="..." id="imgdetails">
                 </div>
+
                 <div class="card-body">
                     <div class="nombre-sexo">
                         <h1 class="card-title">Card title</h1>
@@ -131,7 +132,7 @@
 
 
                 </div>
-            </center>
+            
         </template>
     </div>
     <!----scripts----->
