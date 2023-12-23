@@ -201,7 +201,7 @@ const DetallesAnimales1 = async (id) => {
 
     OGBodyContent.style.display = 'none'
 
-
+    console.log(url2,detail);
 
 
 
