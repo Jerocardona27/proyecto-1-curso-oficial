@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
-*{
-    
-}
+* {}
 
-.body{
+.body {
     background-color: #FEC7D7;
 }
 
@@ -15,26 +13,26 @@
     flex-direction: column;
 }
 
-.abajo{
+.abajo {
     background-color: white;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-.btnNav{
+.btnNav {
     background-color: white;
     border: none;
-    
+
 }
 
-#Home{
+#Home {
     background-color: #0E172C;
     display: flex;
     padding: 8px 16px;
     gap: 8px;
     border-radius: 80px;
-    color:  #85D1CE;
+    color: #85D1CE;
     margin-left: 24px;
 
 }
@@ -48,17 +46,88 @@
     place-items: center;
     margin-left: 24px;
     margin-right: 24px;
-    
+
 }
 
-.link{
+.link {
     text-decoration: none;
 }
 
-.titulo{
+.titulo {
     margin-top: 2em;
     margin-left: 20px;
     color: #0E172C;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
+}
+
+#btnBack {
+    position: fixed;
+    background: #0E172C;
+    border-radius: 50%;
+    margin: 5%;
+    padding: 10px;
+    z-index: 1;
+    width: auto;
+    height: auto;
+}
+
+.img-btn {
+    display: flex;
+    width: 100%;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+
+}
+
+.img-btn img {
+    border: solid 5px #85D1CE;
+    border-radius: 100px;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 24px;
+
+}
+
+.chat p {
+
+    text-align: center;
+    font-family: 'Nunito',
+        sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 149px;
+
+
+
+}
+
+.chat input {
+
+    display: flex;
+
+    padding: 12px 16px;
+    position: absolute;
+    width: 98%;
+    height: 48px;
+    bottom: 79px;
+}
+
+#place {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: fit-content;
+
+
 }

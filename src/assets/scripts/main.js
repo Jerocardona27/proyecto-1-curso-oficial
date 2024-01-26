@@ -6,7 +6,8 @@ const botongato = document.getElementById("icon-gato");
 const template = document.getElementById("template").content;
 const container = document.getElementById("ContainerCards");
 const templateDetails = document.getElementById("TemplateDetails").content;
-const btnBack = document.getElementById("btnBack");
+
+
 const detalleContainer = document.getElementById("detalleContainer");
 botonperro.addEventListener("click", async () => {
     const response = await GetData(url);
@@ -52,8 +53,7 @@ const DetallesAnimales = async (detail) => {
     //   const response = await GetData(url);
     //   const detail = response?.find((fi) => fi.id === id);
     console.log("recibí un Perros: ", detail);
-    //Crear los detalles en la misma
-    //página 5, ocultando el resto del contenido de la misma//
+
     const OGBodyContent = document.getElementById("container-all");
     const {
         Title,
@@ -107,9 +107,11 @@ const DetallesAnimales = async (detail) => {
     templateDetails.querySelector(
         ".Ownertext"
     ).textContent = `Publicado por ${PrevOwner}`;
-    // Hace visible el contenedor de detalles
+
+
     detalleContainer.style.display = "block";
-    // Limpia el contenedor de detalles antes de agregar uno nuevo
+
+
     detalleContainer.innerHTML = "";
     const cloning = templateDetails.cloneNode(true);
     detalleContainer.appendChild(cloning);
@@ -121,7 +123,13 @@ const DetallesAnimales = async (detail) => {
     });
 };
 
+export const RegisterCard = document.getElementById("form") = async () => {};
 
+detalleContainer.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    
+})
 
 
 
