@@ -1,5 +1,5 @@
 import { url } from "../helpers/contains.js";
-import { GetData } from "../helpers/peticiones.js";
+import { GetData, PostData } from "../helpers/peticiones.js";
 import { url2 } from "../helpers/contains.js";
 const botonperro = document.getElementById("icon-perro");
 const botongato = document.getElementById("icon-gato");
@@ -123,12 +123,27 @@ const DetallesAnimales = async (detail) => {
     });
 };
 
-export const RegisterCard = document.getElementById("form") = async () => {};
+export const RegisterCard = document.getElementById("form") = async () => { };
 
 detalleContainer.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    
+    let nombre = document.getElementById("nombre").value;
+    let apellido = document.getElementById('apellido').value;
+    let correo = document.getElementById('correo').value;
+
+    let obj = {
+        nombre,
+        apellido,
+        correo
+    };
+
+    await PostData(url, obj);
+
+    document.getElementById("nombre").value = "";
+    document.getElementById("apellido").value = "";
+    document.getElementById("correo").value = "";
+
 })
 
 
