@@ -13,24 +13,51 @@ export const RegisterCard = document.getElementById("form");
 RegisterCard.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    let id = document.getElementById("nombre").value;
+
     let nombre = document.getElementById("nombre").value;
     let apellido = document.getElementById("apellido").value;
     let correo = document.getElementById("correo").value;
 
 
     let obj = {
-        id,
+
         nombre,
         apellido,
         correo
 
     };
 
-    await PostData(urlp, obj);
+    await PostData(urlp,  obj);
 
-    id = 0;
-    nombre = nombre;
+
+    
+    document.getElementById("nombre").value = nombre;
+    document.getElementById("apellido").value = apellido;
+    document.getElementById("correo").value = correo;
+});
+
+RegisterCard.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+
+    let nombre = document.getElementById("nombre").value;
+    let apellido = document.getElementById("apellido").value;
+    let correo = document.getElementById("correo").value;
+
+
+    let obj = {
+
+        nombre,
+        apellido,
+        correo
+
+    };
+
+    await putData(urlp,  obj);
+
+
+    
+    document.getElementById("nombre").value = nombre;
     document.getElementById("apellido").value = apellido;
     document.getElementById("correo").value = correo;
 });
