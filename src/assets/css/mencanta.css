@@ -51,3 +51,15 @@
 .link{
     text-decoration: none;
 }
+
+.titulo{
+    margin: 5%;
+    padding: 25px 0px;
+    color: var(--Black, #0E172C);
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+}
