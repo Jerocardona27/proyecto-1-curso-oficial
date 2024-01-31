@@ -1,4 +1,4 @@
-import { url } from "../helpers/contains.js";
+import { url, urlp } from "../helpers/contains.js";
 import { GetData, PostData } from "../helpers/peticiones.js";
 import { url2 } from "../helpers/contains.js";
 const botonperro = document.getElementById("icon-perro");
@@ -123,29 +123,51 @@ const DetallesAnimales = async (detail) => {
     });
 };
 
-export const RegisterCard = document.getElementById("form") = async () => { };
 
-detalleContainer.addEventListener("submit", async (event) => {
+
+
+
+
+
+
+//----------------------------------------------------------------//
+
+/*containers.addEventListener("submit", async (event) => {
     event.preventDefault();
-
-    let nombre = document.getElementById("nombre").value;
-    let apellido = document.getElementById('apellido').value;
-    let correo = document.getElementById('correo').value;
-
+  
+    let Title = document.getElementById("title").value;
+    let Carrusel = document.getElementById("carrusel").value;
+    let Poster = document.getElementById("poster").value;
+    let Description = document.getElementById("descripcion").value;
+    let Trailer = document.getElementById("trailer").value;
+    let Year = document.getElementById("year").value;
+    let Value = document.getElementById("valor").value;
+    let Type = document.getElementById("tipo").value;
+  
     let obj = {
-        nombre,
-        apellido,
-        correo
+      Title,
+      Carrusel,
+      Value: Number.parseFloat(Value),
+      Poster,
+      Description,
+      Type,
+      Year,
+      Trailer,
+      id: Math.round(Math.random() * (1000 - 1) + 1).toString(),
     };
-
+  
     await PostData(url, obj);
-
-    document.getElementById("nombre").value = "";
-    document.getElementById("apellido").value = "";
-    document.getElementById("correo").value = "";
-
-})
-
+  
+    document.getElementById("title").value = "";
+    document.getElementById("carrusel").value = "";
+    document.getElementById("poster").value = "";
+    document.getElementById("descripcion").value = "";
+    document.getElementById("trailer").value = "";
+    document.getElementById("year").value = "";
+    document.getElementById("valor").value = "";
+    document.getElementById("tipo").value = "";
+  });
+  */
 
 
 

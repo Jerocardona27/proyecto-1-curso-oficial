@@ -9,9 +9,14 @@ export const GetData2 = async (url2) => {
     return response.data;
 };
 
-export const PostData = async (url, datos) => {
+export const GetDatap = async (urlp) => {
+    const response = await axios.get(urlp);
+    return response.data;
+};
+
+export const PostData = async (urlp, datos) => {
     try {
-      await axios.post(url, datos);
+      await axios.post(urlp, datos);
       alert("Perfil guardado correctamente");
     } catch (error) {
       console.error;
@@ -19,9 +24,9 @@ export const PostData = async (url, datos) => {
   };
   
 
-  export const putData = async (url, datos) => {
+  export const putData = async (urlp, datos) => {
     try {
-      await axios.put(url, datos);
+      await axios.put(urlp, datos);
       alert("Perfil editado exitosamente");
     } catch (error) {
       console.error;
@@ -29,9 +34,9 @@ export const PostData = async (url, datos) => {
   };
   
 
-  export const deleteData = async (url) => {
+  export const deleteData = async (urlp) => {
     try {
-      await axios.delete(url, datos);
+      await axios.delete(urlp, datos);
       alert("Se borro exitosamente");
     } catch (error) {
       console.error;
