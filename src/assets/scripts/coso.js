@@ -22,20 +22,43 @@ RegisterCard.addEventListener("submit", async (event) => {
 
 
     let obj = {
-
+        id: 2,
         nombre,
         apellido,
         correo,
-        id: Math.round(Math.random() * (1000 - 1) + 1).toString(),
+
 
     };
 
-    await PostData(urlp,  obj);
+    await PostData(urlp, obj);
 
 
-    
+
     document.getElementById("nombre").value = "";
     document.getElementById("apellido").value = "";
     document.getElementById("correo").value = "";
+
+
+
 });
+
+export const borrardatos = document.getElementById("borrar");
+
+borrardatos.addEventListener('click', async (event) => {
+    event.preventDefault();
+
+    let obj = {
+
+        id: 2
+        
+
+
+    };
+
+    await deleteData(urlp, obj);
+
+    console.log('se ha borrado');
+})
+
+
 
