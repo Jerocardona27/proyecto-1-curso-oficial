@@ -18,12 +18,15 @@ RegisterCard.addEventListener("submit", async (event) => {
     let apellido = document.getElementById("apellido").value;
     let correo = document.getElementById("correo").value;
 
+    console.log(nombre, apellido, correo);
+
 
     let obj = {
 
         nombre,
         apellido,
-        correo
+        correo,
+        id: Math.round(Math.random() * (1000 - 1) + 1).toString(),
 
     };
 
@@ -31,33 +34,8 @@ RegisterCard.addEventListener("submit", async (event) => {
 
 
     
-    document.getElementById("nombre").value = nombre;
-    document.getElementById("apellido").value = apellido;
-    document.getElementById("correo").value = correo;
+    document.getElementById("nombre").value = "";
+    document.getElementById("apellido").value = "";
+    document.getElementById("correo").value = "";
 });
 
-RegisterCard.addEventListener("submit", async (event) => {
-    event.preventDefault();
-
-
-    let nombre = document.getElementById("nombre").value;
-    let apellido = document.getElementById("apellido").value;
-    let correo = document.getElementById("correo").value;
-
-
-    let obj = {
-
-        nombre,
-        apellido,
-        correo
-
-    };
-
-    await putData(urlp,  obj);
-
-
-    
-    document.getElementById("nombre").value = nombre;
-    document.getElementById("apellido").value = apellido;
-    document.getElementById("correo").value = correo;
-});
